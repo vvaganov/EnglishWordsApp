@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ibClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
@@ -32,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/ibClose" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/layoutVariants"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
@@ -46,6 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvQuestionWord">
 
         <LinearLayout
+            android:id="@+id/layoutAnswer1"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@drawable/shape_rounded_containers"
@@ -54,6 +55,7 @@
 
 
             <TextView
+                android:id="@+id/tvVariantNumber1"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="12dp"
@@ -66,6 +68,7 @@
                 />
 
             <TextView
+                android:id="@+id/tvVariantValue1"
                 style="@style/TextVieWVariantsStyle"
                 android:layout_width="235dp"
                 android:layout_height="24dp"
@@ -77,6 +80,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layoutAnswer2"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="18dp"
@@ -86,6 +90,7 @@
 
 
             <TextView
+                android:id="@+id/tvVariantNumber2"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="12dp"
@@ -98,6 +103,7 @@
                 />
 
             <TextView
+                android:id="@+id/tvVariantValue2"
                 style="@style/TextVieWVariantsStyle"
                 android:layout_width="235dp"
                 android:layout_height="24dp"
@@ -144,6 +150,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layoutAnswer4"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="18dp"
@@ -153,6 +160,7 @@
 
 
             <TextView
+                android:id="@+id/tvVariantNumber4"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="12dp"
@@ -165,6 +173,7 @@
                 />
 
             <TextView
+                android:id="@+id/tvVariantValue4"
                 style="@style/TextVieWVariantsStyle"
                 android:layout_width="235dp"
                 android:layout_height="24dp"
