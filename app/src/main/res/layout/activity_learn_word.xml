@@ -25,14 +25,15 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="32dp"
         android:layout_marginTop="96dp"
-        android:text="Galaxy"
-        android:textSize="50dp"
         android:fontFamily="@font/nunito_bold"
         android:textColor="#202027"
+        android:textSize="50dp"
+        android:singleLine="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibClose" />
+        app:layout_constraintTop_toBottomOf="@+id/ibClose"
+        tools:text="Galaxy" />
 
     <LinearLayout
         android:id="@+id/layoutVariants"
@@ -45,144 +46,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestionWord">
 
-        <LinearLayout
-            android:id="@+id/layoutAnswer1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAnswer"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@drawable/shape_rounded_containers"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-
-            <TextView
-                android:id="@+id/tvVariantNumber1"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/shape_rounded_variants"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="#888992"
-                android:textSize="16sp"
-
-                />
-
-            <TextView
-                android:id="@+id/tvVariantValue1"
-                style="@style/TextVieWVariantsStyle"
-                android:layout_width="235dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center_vertical"
-                android:text="Сломать"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutAnswer2"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="18dp"
-            android:background="@drawable/shape_rounded_containers"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/tvVariantNumber2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/shape_rounded_variants"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="#888992"
-                android:textSize="16sp"
-
-                />
-
-            <TextView
-                android:id="@+id/tvVariantValue2"
-                style="@style/TextVieWVariantsStyle"
-                android:layout_width="235dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center_vertical"
-                android:text="Сон"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutAnswer3"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="18dp"
-            android:background="@drawable/shape_rounded_containers"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/tvVariantNumber3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/shape_rounded_variants"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="#888992"
-                android:textSize="16sp"
-
-                />
-
-            <TextView
-                android:id="@+id/tvVariantValue3"
-                style="@style/TextVieWVariantsStyle"
-                android:layout_width="235dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center_vertical"
-                android:text="Галактика"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/layoutAnswer4"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="18dp"
-            android:background="@drawable/shape_rounded_containers"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/tvVariantNumber4"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/shape_rounded_variants"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="#888992"
-                android:textSize="16sp"
-
-                />
-
-            <TextView
-                android:id="@+id/tvVariantValue4"
-                style="@style/TextVieWVariantsStyle"
-                android:layout_width="235dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="8dp"
-                android:gravity="center_vertical"
-                android:text="Утюг"
-                tools:ignore="HardcodedText" />
-
-        </LinearLayout>
     </LinearLayout>
 
     <android.widget.Button
